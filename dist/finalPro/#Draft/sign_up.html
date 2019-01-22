@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sign-up</title>
+</head>
+<body style="padding-left: 20%; padding-right: 20%;">
+
+	<h1 style="text-align: center;">Account Creation</h1>
+	<form action="sign_up.php" method="Post">
+	<fieldset>
+    	<legend>Personal information:</legend>
+
+	    Name :
+			<input type="text" name="f_name" placeholder="Enter First Name" autofocus><br><br>
+		Email : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="email" name="email" placeholder="someone@example.com"><br><br>
+		Phone : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="number" name="phone" placeholder="+8801*********"><br><br>
+		Gender : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="gender" id="male" value="male" checked>
+			<label for="male">Male</label><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="gender" id="female" value="female">
+			<label for="female">Female</label><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="gender" id="other" value="other">
+			<label for="other">Other</label><br><br>
+		Password : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="password" name="password" placeholder="********"><br><br>
+
+		User Type : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="type" id="operator" value="operator">
+			<label for="operator">Operator</label>
+			&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="type" id="user" value="user" checked>
+			<label for="user">User</label><br><br>
+			
+			<input type="submit" name="submit" value="Submit">
+			<input type="reset">
+
+
+		</fieldset>
+	</form>
+
+</body>
+</html>

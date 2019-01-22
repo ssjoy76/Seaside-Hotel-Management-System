@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Berkshire Swash', cursive;
+}
+
+/*Header starts here*/
+.navbar {
+  font-weight: 400 !important;
+  background-color: rgba(221, 221, 221, 0.4);
+}
+
+.navbar.navbar-dark .navbar-nav .nav-item .nav-link {
+  color: #000;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 1200px) {
+  .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
+    font-size: 1rem;
+  }
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.collapse ul li a {
+  border-bottom: 2px solid transparent;
+}
+
+.collapse ul li:hover a {
+  color: purple !important;
+  border-bottom: 2px solid purple;
+}
+
+.main-nav-scrolled {
+  background-color: #ddd;
+  transition: all 0.5s;
+}
+
+.main-nav {
+  transition: all 0.5s;
+}
+
+/*Header ends here*/
+/*Room-service section starts here*/
+#service {
+  padding: 50px 0 50px;
+}
+
+#room-service h2 {
+  margin-bottom: 50px;
+  font-weight: 400;
+}
+
+#room-service h4 {
+  margin-top: 100px;
+  font-weight: 400;
+  color: #0297FF;
+  font-size: 50px;
+}
+
+@media (max-width: 500px){
+  #room-service h4 {
+    font-size: 35px;
+  }
+}
+
+.facilities {
+  padding: 50px 0;
+}
+.facilities i {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+  .facilities i {
+    font-size: 40px;
+  }
+}
+/*Room-service section ends here*/
+/*Our-team section starts here*/
+#our-team {
+  padding: 50px 0 50px;
+  background-color: #eee;
+}
+
+.max > h4, .max > p {
+  color: gray;
+}
+
+.max > h1 {
+  font-size: 100px;
+  color: #0297FF;
+}
+
+@media (max-width: 500px) {
+  .max > h1 {
+    font-size: 40px;
+  }
+}
+#our-team .col-md-4 {
+  padding-bottom: 30px;
+}
+
+.team {
+  margin-top: 100px;
+}
+
+.team h2 {
+  color: #000;
+}
+
+.team h2, h4 {
+  margin-bottom: 50px;
+}
+
+.rl {
+  padding: 0 5px;
+}
+
+.team .card-body > h3 {
+  font-size: 20px;
+}
+
+/*Our-team section ends here*/
+.bg-dark {
+  background-color: #343a40 !important;
+}
+
+.pad {
+  padding: 100px 0;
+}
+
+.form-control {
+  height: 13rem;
+}
+
+.contain {
+  width: 45%;
+  margin: 0 auto;
+  background-image: url(../img/beauty.jpg);
+  color: #fff;
+}
+
+@media (max-width: 800px) {
+  .contain {
+    width: 100%;
+  }
+}
+.cont {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 100px 50px 30px;
+}
+
+.md-form label {
+  color: #fff;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.pa {
+  padding: 10px 15px 0;
+}
+
+/*Menu section starts here*/
+#menu {
+  padding: 100px;
+}
+
+.gap {
+  margin: 10px 0;
+}
+
+/*Menu section ends here*/
+#room {
+  padding: 100px 0;
+}
+
+#room h2 {
+  margin-bottom: 50px;
+  font-weight: 400;
+}
+
+#room h4 {
+  margin-top: 100px;
+  font-weight: 400;
+  color: #0297FF;
+  font-size: 50px;
+}
+
+.ma {
+  margin: 15px 0;
+}
+
+/*What section starts here*/
+#what {
+  padding: 100px 0;
+}
+
+#what img {
+  margin: 20px 0;
+}
+
+#what span {
+  font-size: 2.5rem;
+  color: #b19261;
+}
+
+.icon {
+  background-color: #F2F4F8;
+  padding: 15px 0 15px 25px;
+}
+
+.icon i {
+  color: #b19261;
+}
+
+.box {
+  border: 1px solid gray;
+  padding: 3rem;
+}
+
+.ga {
+  padding: 4.5rem 0;
+}
+
+form {
+  margin-top: 5rem;
+  padding: 1rem;
+  background-color: rgba(177, 146, 97, 0.6);
+}
+
+/*What section ends here*/
+/*Footer starts here*/
+.bg-dark {
+  background-color: #343a40 !important;
+}
+
+/*Footer ends here*/
+/*Service section starts here*/
+#service {
+  padding: 100px 0 50px;
+}
+
+#service h2 {
+  margin-bottom: 50px;
+}
+
+#service h4 {
+  margin-top: 50px;
+}
+
+/*Service section ends here*/
+.contain {
+  width: 40%;
+  margin: 0 auto;
+  background-image: url(../img/beauty.jpg);
+  color: #fff;
+}
+
+@media (max-width: 800px) {
+  .contain {
+    width: 100%;
+  }
+}
+.cont {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 100px 50px 30px;
+}
+
+.md-form label {
+  color: #fff;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.pad {
+  padding: 10% 0;
+}
+
+.pa {
+  padding: 10px 15px 0;
+}
+
+.form-control {
+  color: #000 !important;
+}
+
+header .active {
+  background-color: rgba(42,42,42,0.2)!important;
+}
+
+header .active a{
+  border-bottom: 2px solid transparent!important;
+}
+
+@media (max-width: 300px){
+  .me h1{
+    font-size: 35px !important;
+  }
+  .me h3 {
+  font-size: 20px !important;
+}
+}
+
+/*# sourceMappingURL=style.css.map */

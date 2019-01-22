@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>User Panel</title>
+    <!-- Font family -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <!-- My custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body style="padding-left: 30%; padding-right: 30%;">
+    <div class="user">
+            <div class="container" id="logIn">
+                <h1 style="text-align: center;">Seaside Hotel</h1>
+            <form class="form-signin" action="redirectUser.php" method="Post"> <br>
+                <h3 class="text-center">Login Panel</h3>
+                <input class="form-control" id="uname" type="text" name="u_name" placeholder="ID" onkeyup="idValidity()">
+                <br>
+                <input class="form-control" id="upass" type="password" name="password" placeholder="Password" onkeyup="passValidity()">
+                <br>
+                <input style="margin-top:1%;" class="btn btn-primary" type="submit" name="submit" value="Submit" onclick="return submitRedirect()">
+                <br>
+                <br>
+                <a class="btn btn-danger" href="../index.html">Back</a>
+                <div style="text-align: right;">
+                    <a id="newAcc" href="#signUp" style="text-decoration: none;" onclick="NewAccount()">Create a new account</a>
+                </div>
+           </form>
+        </div>
+        
+        <div id="signUp" style="display:none;">
+            <h1 style="text-align: center;">Create Account</h1>
+            <form name="signup" action="sign_up.php" method="Post">
+                <fieldset>
+                    <h3 class="text-center">Personal Information</h3>
+
+                    Name :
+                        <input class="form-control" id="sName" type="text" name="f_name" required><br>
+                    Gender :
+                        <input type="radio" name="gender" id="male" value="male" checked>
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">Female</label><br>
+                    Email :
+                        <input class="form-control" id="sEmail" type="text" name="email" placeholder="Email" required><br>
+                    Phone :
+                        <input class="form-control" id="sPhone" type="text" name="phone" placeholder="Enter Number" required><br>
+                    Password :
+                        <input class="form-control" id="sPass1" type="password" name="password" placeholder="Password" required><br>
+                    Confirm Password :
+                        <input class="form-control" id="sPass2" type="password" name="c_password" placeholder="Confirm Password" required><br>
+                    User Type :
+                        <input type="radio" name="type" value="operator" id="operatorSelect" onclick="operator()">
+                        <label for="operator" >Operator</label>
+                        <input type="radio" name="type" value="customer" id="userSelect" onclick="operator()" checked>
+                        <label for="user" >User</label><br>
+                    <div id="adminCheck" style="margin-bottom:1%;display:none;">
+                        <h4>Admin Credentials</h4>
+                        <br>
+                        <input class="form-control" type="text" name="adminId" placeholder="ID">
+                        <br>
+                        <input class="form-control" type="password" name="adminPass" placeholder="Password">
+                        <br>
+                    </div>
+
+                    <button class="btn btn-danger" onclick="returnSignIn()">Back</button>
+                    <input class="btn btn-primary" type="submit" name="submit" value="Submit" onsubmit="return signupValidation();">
+                        
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Parallax Javascript -->
+    <script type="text/javascript" src="js/parallax.js"></script>
+    <!-- My JavaScript -->
+    <script type="text/javascript" src="js/javascript.js"></script>
+    <script>
+        function operator()
+        {
+            newOp = document.getElementById('operatorSelect').checked;
+            admin = document.getElementById('adminCheck');
+            if(newOp)
+            {
+                admin.style.display = "block";
+            }
+            else
+            {
+                admin.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

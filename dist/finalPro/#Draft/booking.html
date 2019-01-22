@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Room Booking</title>
+</head>
+<body>
+	<form action="booking.php" method="Post">
+		Booking Date :
+			<input type="text" name="booking_date" placeholder="DD-MMM-YYYY" autofocus><br><br>
+
+		<!-- Room Type : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="room_type" id="general" value="general" checked>
+			<label for="general">General Class</label><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="room_type" id="business" value="business">
+			<label for="business">Business Class</label><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="room_type" id="premium" value="premium">
+			<label for="premium">Premium Class</label><br><br>
+ -->
+ 		Room Type : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 		<select name="room_type">
+ 			<option>General Class</option>
+ 			<option>Business Class</option>
+ 			<option>Premium Class</option>
+ 		</select><br><br>
+
+		Check in :
+			<input type="text" name="check_in" placeholder="DD-MMM-YYYY"><br><br>
+		Check Out :
+			<input type="text" name="check_out" placeholder="DD-MMM-YYYY"><br><br>
+
+		<input type="submit" name="submit" value="Submit">
+		<input type="reset">
+
+		
+	</form>
+</body>
+</html>

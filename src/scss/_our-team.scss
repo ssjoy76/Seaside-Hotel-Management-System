@@ -1,0 +1,36 @@
+/*Our-team section starts here*/
+#our-team{
+	padding: 50px 0 50px;
+	background-color: #eee;
+}
+.max > h4, .max > p{
+	color: gray;
+}
+.max > h1{
+	font-size: 100px;
+	color: #0297FF;
+}
+@media (max-width: 500px){
+	.max > h1{
+		font-size: 40px;
+	}
+}
+#our-team .col-md-4{
+	padding-bottom: 30px;
+}
+.team{
+	margin-top: 100px;
+}
+.team h2{
+	color: #000;
+}
+.team h2,h4{
+	margin-bottom: 50px;
+}
+.rl{
+	padding: 0 5px;
+}
+.team .card-body>h3 {
+	font-size: 20px;
+}
+/*Our-team section ends here*/

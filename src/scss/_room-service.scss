@@ -1,0 +1,30 @@
+/*Room-service section starts here*/
+#service{
+	padding: 100px 0 100px;
+}
+#room-service h2{
+	margin-bottom: 50px;
+	font-weight: 400;
+}
+#room-service h4{
+	margin-top: 100px;
+	font-weight: 400;
+	color: #0297FF;
+	font-size: 50px;
+}
+.ma{
+	margin: 15px 0;
+}
+.facilities {
+	padding: 50px 0;
+	i{
+	color: gray;
+	margin-bottom: 20px;
+}
+}
+@media (max-width: 992px){
+	.facilities i{
+		font-size: 40px;
+	}
+}
+/*Room-service section ends here*/

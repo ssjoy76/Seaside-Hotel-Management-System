@@ -1,0 +1,8 @@
+body {
+	background: url("../../img/beauty.jpg");
+	background-repeat: no-repeat;
+	position: relative;
+	background-attachment: fixed;
+	background-position: center;
+	color: #fff;
+}

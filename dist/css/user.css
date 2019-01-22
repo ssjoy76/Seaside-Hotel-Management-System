@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Berkshire Swash', cursive;
+}
+body{
+	background-color: gray;
+}
+/*Header starts here*/
+.navbar {
+  font-weight: 400!important;
+  background-color: gray;
+}
+
+.navbar.navbar-dark .navbar-nav .nav-item .nav-link {
+  color: #000;
+  font-size: 18px;
+}
+
+@media (max-width: 1200px) {
+  .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+  }
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.collapse ul li a {
+  border-bottom: 2px solid transparent;
+}
+
+.collapse ul li:hover a {
+  color: purple !important;
+  border-bottom: 2px solid purple;
+}
+
+/*Header ends here*/
+.contain{
+	width: 45%;
+	margin: 0 auto;
+	background-image: url(../img/beauty.jpg);
+	color: #fff;
+}
+@media (max-width: 800px){
+	.contain{
+		width: 100%;
+	}
+}
+.cont{
+	width: 100%;
+	background-color: rgba(0,0,0,0.5);
+	padding: 100px 50px 30px;
+}
+.md-form label{
+	color: #fff;
+}
+footer{
+	background-color: rgba(0,0,0,0.8);
+}
+.pad{
+	padding: 10% 0;
+}
+.pa{
+	padding: 10px 15px 0;
+}
+.form-control{
+	color: #24caa4!important;
+}

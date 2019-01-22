@@ -1,0 +1,31 @@
+.contain{
+	width: 45%;
+	margin: 0 auto;
+	background-image: url(../img/beauty.jpg);
+	color: #fff;
+}
+@media (max-width: 800px){
+	.contain{
+		width: 100%;
+	}
+}
+.cont{
+	width: 100%;
+	background-color: rgba(0,0,0,0.5);
+	padding: 100px 50px 30px;
+}
+.md-form label{
+	color: #fff;
+}
+footer{
+	background-color: rgba(0,0,0,0.8);
+}
+.pad{
+	padding: 10% 0;
+}
+.pa{
+	padding: 10px 15px 0;
+}
+.form-control{
+	color: #24caa4!important;
+}
